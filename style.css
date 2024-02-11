@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    justify-content: center;
+
+    max-width: 80vw;
+    background-color: aquamarine;
+}
+.box{
+    padding: 10px;
+    /*border radius for border curve*/
+    border-radius: 60px;
+    background-color: rgb(245, 239, 239);
+    margin: 0 10px;
+    
+}
+#box1{
+    /* parameter 1 for horizontal-scale 
+       p2 for vertical-scale 
+       p3 for blur */
+    box-shadow: 10px 10px 0 pink;
+}
+#box2{
+    /*double shadow for box*/
+    /*first 3 parametrs are same as previous box and color 
+      and after comma for another shadow */
+    box-shadow: 10px 10px 0 rgb(195, 195, 247), -10px -10px 0 rgb(157, 157, 227);
+}
+#box3{
+    /*use inset for set the shadow inside the box
+      and parameters are similar as box1 */
+    box-shadow: 10px 10px 0 blueviolet,inset -50px -10px 0 greenyellow;
+}
+#box4{
+    /* inside the box similar as box3 with blur effect */
+    box-shadow: 10px 10px 20px rgb(72, 72, 73),inset -50px -10px 20px white ;
+}
+.TEXT{
+    padding: 10px;
+    background-color: antiquewhite;
+    margin: 0 10px;
+}
+#text1{
+    /*text shadow*/
+        /* parameter 1 for horizontal-scale 
+           p2 for vertical-scale 
+           p3 for blur */
+        text-shadow: 10px 10px 0 rgb(68, 74, 240);
+}
+#text2{
+    /* shadow with blur effects of black color */
+    text-shadow: 10px 10px 10px black;
+}
+#text3{
+    /*for double shadow effects use double parameters*/
+    text-shadow: 10px 10px 0 black, -10px -10px 0 rgb(0, 0, 0);
+}
+#text4{
+    /*not working this inset in text shadow */
+    text-shadow: 0 0 0, inset -50px -10px 0 red;
+}
